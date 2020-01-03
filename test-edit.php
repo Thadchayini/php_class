@@ -1,0 +1,1 @@
+<td><a href = "test-edit.php"? id = <?php echo $row["id"]; ?>>Edit</td>

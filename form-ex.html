@@ -1,0 +1,64 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <form action = "form-ex.php" method = "post">
+            <fieldset style ="width:400px;">
+            <br/> 
+            <legend> Student Details </legend>
+
+            <!-- first name -->
+            <label for="fname">First Name : 
+                <input type = "text" name = "fname" id = "fname" placeholder="Enter your first name"/>
+            </label>
+            <br/>
+            <br/>
+
+            <!-- last name -->
+            <label for="fname">Last Name : 
+                <input type = "text" name = "lname" id = "lname" placeholder="Enter your last name"/>
+            </label>
+            <br/>
+            <br/>
+
+            <!-- gender -->
+            <label>Gender &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: </label>
+            <label><input type = "radio" name= "gender" id = "gender" value = "Male"/>Male</label>
+            <label><input type = "radio" name= "gender" id = "gender" value = "Female"/>Female</label>
+            <label><input type = "radio" name= "gender" id = "gender" value = "Other"/>Other</label>
+            <br/>
+            <br/>
+
+            <!-- class -->
+            <label for="class">Class &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:
+                <select name = "class">
+                <option  id = "class1" value="10A">10A</option>
+                <option  id = "class2" value="10B">10B</option>
+                <option  id = "class3" value="10C">10C</option>
+                </select>
+            </label>
+            <br/>
+            <br/>
+
+            <!-- subject -->
+            <label>Subject &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: </label>
+            <label><input type = "checkbox" name = "subject[]" id = "subject" value = "Maths"/>Maths</label>
+            <label><input type = "checkbox" name = "subject[]" id = "subject" value = "English" padding-left = "100px"/>English</label>
+            <label><input type = "checkbox" name = "subject[]" id = "subject" value = "Tamil"/>Tamil</label>
+            
+            <br/>
+            <br/>
+
+            <!-- address -->
+            <label for="address">Address &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: 
+                <textarea type = "text" name= "address" id = "address"></textarea></label>
+            <br/>
+            <br/>
+
+            <input type = "submit" value = "Submit"/>
+            <input type = "reset" value = "clear"/>
+        </fieldset>
+        </form>
+    </body>
+</html>
